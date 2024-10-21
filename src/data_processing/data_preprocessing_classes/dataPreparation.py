@@ -108,18 +108,20 @@ class dataPrepare:
 
     #################################### Save in a pickel format #################################################
     # Save the xTrain, xTest, yTrain, xTest in pickle format
-    def save_test_train_data_pickle(self):
+    def save_test_train_data_pickle(self, path):
+        self.path = path
         if not self.xTrain_data and self.xTest_data and self.yTrain_data and self.yTest_data:
             print("Train and Test data missing!")
         else:
             # save train and test data in a single pickle file
-            with open('train_test.pickle', 'wb') as train_test_file:
+            with open(self.path, 'wb') as train_test_file:
                 pickle.dump([self.xTrain_data, self.xTest_data, self.yTrain_data, self.yTest_data], train_test_file)
 
     ####################################  Reload from a pickel format ###########################################
     # Load the xTrain, xTest, yTrain, xTest from a pickle format
-    def load_test_train_data_pickle(self):
+    def load_test_train_data_pickle(self, path):
+        self.path = path
         # reload saved train and test data pickle file
-        with open('train_test.pickle', 'rb') as train_test_file:
+        with open(self.path, 'rb') as train_test_file:
             self.xTrain_data, self.xTest_data, self.yTrain_data, self.yTest_data = pickle.load(train_test_file)
         return self.xTrain_data, self.xTest_data, self.yTrain_data, self.yTest_data
