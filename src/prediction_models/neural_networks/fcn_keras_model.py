@@ -6,7 +6,7 @@ from keras.layers import Dropout
 import numpy as np
 
 
-def FCN_keras_model(xTrain, xTest, yTrain, yTest):
+def FCN_keras_model(xTrain, xTest, yTrain, yTest, filepath):
     # flatten the input and output
     n_input = np.shape(xTrain)[1] * np.shape(xTrain)[2]
     xTrain = np.reshape(xTrain, (np.shape(xTrain)[0], n_input))
@@ -26,14 +26,13 @@ def FCN_keras_model(xTrain, xTest, yTrain, yTest):
     model.compile(optimizer='adam', loss='mse')
 
     # fit the keras model on the dataset
-    history =model.fit(xTrain, yTrain, epochs=100, verbose=1, validation_data=(xTest, yTest))
+    history =model.fit(xTrain, yTrain, epochs=2, verbose=1, validation_data=(xTest, yTest))
 
     # save the trained model
-    filepath = 'FCN_model.h5'
     model.save(filepath)
 
     # load trained model
-    model = keras.models.load_model('FCN_model.h5')
+    model = keras.models.load_model(filepath)
 
     # Training and validation loss plot
     plt.plot(history.history['loss'])
