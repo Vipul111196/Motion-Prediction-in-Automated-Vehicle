@@ -1,0 +1,10 @@
+dataset_path : 'I:/8_end_to_end_projects/Project_0_Motion_Prediction/dataset/raw/'
+recording_id_sel : ['23']
+training_data_preprocessed_already : True
+path_to_save_and_load_data_pickle: 'I:/8_end_to_end_projects/Project_0_Motion_Prediction/dataset/processed/train_test_data.pickle'
+model_path: 'I:/8_end_to_end_projects/Project_0_Motion_Prediction/models/FCN_model.keras'
+recording_id_sel_test : ['28']
+testing_data_preprocessed_already : False
+path_to_save_and_load_test_data_pickle: 'I:/8_end_to_end_projects/Project_0_Motion_Prediction/dataset/processed/Final_test_data.pickle'
+work_book_filename: 'I:/8_end_to_end_projects/Project_0_Motion_Prediction/predictions/DL_Based/NN_velocity_prediction_result.xlsx' 
+result_path: 'I:/8_end_to_end_projects/Project_0_Motion_Prediction/results/DL_Based/FCN_final_results.xlsx'
