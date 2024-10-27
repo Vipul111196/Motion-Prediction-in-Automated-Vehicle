@@ -1,3 +1,7 @@
 motion_prediction/
 .ipynb_checkpoints/
 __pycache__/
+*.zip
+dataset/
+inD-dataset-v1.0/
+*xlsx
