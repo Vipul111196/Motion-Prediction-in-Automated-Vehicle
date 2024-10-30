@@ -36,25 +36,25 @@ The dataset includes recordings from four distinct locations, each with unique c
    - Features a four-armed intersection near a university, with a mix of cars, buses, pedestrians, and bicyclists.
    - Main interactions involve left turns and mixed-use paths.
    
-   ![Bendplatz Intersection]('assets\00_background.png')
+   ![Bendplatz Intersection]('assets/00_background.png')
 
 2. **Frankenburg, Aachen**:
    - A residential area with a zebra crossing and high pedestrian traffic.
    - Features frequent interactions between vehicles, bicyclists, and pedestrians.
    
-   ![Frankenburg Intersection](assets\11_background.png)
+   ![Frankenburg Intersection](assets/11_background.png)
 
 3. **Heckstrasse, Aachen**:
    - A T-junction in a suburban setting with cycle paths and pedestrian crossings.
    - Interaction hotspots are primarily left turns and pedestrian crossings.
    
-   ![Heckstrasse Intersection](assets\23_background.png)
+   ![Heckstrasse Intersection](assets/23_background.png)
 
 4. **Neuköllner Strasse, Aachen**:
    - Located in an industrial area with a double-laned priority road.
    - High bus traffic due to proximity to a bus depot, creating a mix of pedestrian and vehicular interactions.
    
-   ![Neuköllner Strasse Intersection](assets\32_background.png)
+   ![Neuköllner Strasse Intersection](assets/32_background.png)
 
 Each location provides a different layout, road user composition, and interaction type, making the dataset diverse and suitable for training robust prediction models.
 
