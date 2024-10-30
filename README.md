@@ -131,37 +131,21 @@ Three metrics are used to evaluate the accuracy of the model’s predictions:
 
 **Definition**: ADE measures the average distance between the predicted and actual positions over all frames in a predicted trajectory.
 
-- **Formula**: 
-  \[
-  \text{ADE} = \frac{1}{N} \sum_{i=1}^{N} \sqrt{(x_{\text{val}} - x_{\text{pred}})^2 + (y_{\text{val}} - y_{\text{pred}})^2}
-  \]
-
 - **Explanation**: Lower ADE values indicate that, on average, the model’s predictions are closer to the actual positions throughout the trajectory.
 
 ### 2. Final Displacement Error (FDE)
 
 **Definition**: FDE measures the distance between the predicted and actual position only at the final point of the trajectory.
 
-- **Formula**:
-  \[
-  \text{FDE} = \sqrt{(x_{\text{val}} - x_{\text{pred}})^2 + (y_{\text{val}} - y_{\text{pred}})^2}
-  \]
-
 - **Explanation**: FDE provides an idea of how accurately the model predicts the endpoint of the trajectory.
 
 ### 3. Average Heading Error (AHE)
 
 **Definition**: AHE measures the average difference between the predicted and actual headings over all frames in a predicted trajectory.
-
-- **Formula**:
-  \[
-  \text{AHE} = \frac{1}{N} \sum_{i=1}^{N} | \text{heading}_{\text{val}} - \text{heading}_{\text{pred}} |
-  \]
   
 - **Explanation**: Lower AHE values indicate that the model predicts the direction of movement more accurately.
 
 Each of these metrics is computed and stored in a results file for review.
----
 
 ## Usage Instructions
 
