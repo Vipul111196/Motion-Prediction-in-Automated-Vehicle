@@ -36,7 +36,7 @@ The dataset includes recordings from four distinct locations, each with unique c
    - Features a four-armed intersection near a university, with a mix of cars, buses, pedestrians, and bicyclists.
    - Main interactions involve left turns and mixed-use paths.
    
-   ![Bendplatz Intersection]('assets/00_background.png')
+   ![Bendplatz Intersection](assets/00_background.png)
 
 2. **Frankenburg, Aachen**:
    - A residential area with a zebra crossing and high pedestrian traffic.
